@@ -12,7 +12,6 @@ from dagster import asset
 from dagster import FreshnessPolicy, RetryPolicy
 import pickle
 
-
 def get_github_docs(repo_owner, repo_name):
     with tempfile.TemporaryDirectory() as d:
         subprocess.check_call(
